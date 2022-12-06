@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs') -%>
+
+<div class="page-wrapper">
+    <h1>Compose</h1>
+    
+    <form action="/compose" method="post">
+        <div class="mb-3">
+            <label for="composeTitle" class="form-label">Title</label>
+            <input type="text" name="composeTitle" id="" class="form-control" autocomplete="off"/>
+        </div>
+        <div class="mb-3">
+            <label for="composeText" class="form-label">Post</label>
+            <textarea
+                name="composeText"
+                id=""
+                class="form-control"
+                cols="30"
+                rows="5"></textarea>
+        </div>
+        <button type="submit" name="composeButton" class="btn btn-primary">
+            Publish
+        </button>
+    </form>
+</div>
+
+<%- include('partials/footer.ejs') -%>
